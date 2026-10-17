@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkAdjustment" id="adjustment_decimals">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <template class="MathPreferencesDialog" parent="AdwPreferencesDialog">
+    <property name="content_height">440</property>
+    <child>
+      <object class="AdwPreferencesPage">
+        <child>
+          <object class="AdwPreferencesGroup">
+            <child>
+              <object class="AdwSpinRow" id="row_decimals">
+                <property name="title" translatable="yes">Number of _Decimals</property>
+                <property name="use_underline">True</property>
+                <property name="adjustment">adjustment_decimals</property>
+                <property name="numeric">True</property>
+                <property name="value">9</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="row_trailing_zeroes">
+                <property name="title" translatable="yes">Trailing _Zeroes</property>
+                <property name="use_underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="row_thousands_separators">
+                <property name="title" translatable="yes">_Thousands Separators</property>
+                <property name="use_underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwComboRow" id="row_angle_units">
+                <property name="title" translatable="yes">_Angle Units</property>
+                <property name="use_underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwComboRow" id="row_word_size">
+                <property name="title" translatable="yes">Word _Size</property>
+                <property name="use_underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwComboRow" id="row_refresh_interval">
+                <property name="title" translatable="yes">E_xchange Rate Refresh Interval</property>
+                <property name="use_underline">True</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
